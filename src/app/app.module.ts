@@ -11,6 +11,7 @@ import { IconComponent } from './common/icon/icon.component';
 import { ActionButtonComponent } from './common/action-button/action-button.component';
 import { ActionButtonGroupComponent } from './common/action-button-group/action-button-group.component';
 import { DataCellComponent } from './common/data-cell/data-cell.component';
+import { DataListComponent } from './common/data-list/data-list.component';
 import { DataRowComponent } from './common/data-row/data-row.component';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { DataRowComponent } from './common/data-row/data-row.component';
     ActionButtonComponent,
     ActionButtonGroupComponent,
     DataCellComponent,
+    DataListComponent,
     DataRowComponent,
   ],
   imports: [

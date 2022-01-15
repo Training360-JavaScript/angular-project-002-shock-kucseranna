@@ -76,10 +76,11 @@
 <div class="container">
   <div class="row">
     <div class="col-8">
-      ...
+      <app-data-list [dataList]="userArr" (selectClick)="onSelectClick($event)" (updateClick)="onUpdateClick($event)"
+        (deleteClick)="onDeleteClick($event)"></app-data-list>
     </div>
     <div class="col-4">
-      ...
+      <app-user-detail [user] = "currentUser" (delUser)="onDeleteClick(currentUser)"> </app-user-detail>
     </div>
   </div>
 </div>

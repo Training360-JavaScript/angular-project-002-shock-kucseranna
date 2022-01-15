@@ -10,6 +10,19 @@ import { UserService } from './service/user.service';
 export class AppComponent {
   title = 'The good Angular programmer';
 
-  constructor() {}
+  userArr!: User[];
+  currentUser: User = new User();
 
+  constructor(private userService: UserService) {
+this.userArr = this.userService.list
+  }
+onSelectClick(currentUser: User): void {
+  this.currentUser = currentUser
+}
+onUpdateClik(currentUser: User): void {
+  this.userService.updateUser(currentUser)
+}
+onDeleteClick(currentUser: User): void {
+  this.userService.removeUser(currentUser)
+}
 }
