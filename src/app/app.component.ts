@@ -19,7 +19,7 @@ this.userArr = this.userService.list
 onSelectClick(currentUser: User): void {
   this.currentUser = currentUser
 }
-onUpdateClik(currentUser: User): void {
+onUpdateClick(currentUser: User): void {
   this.userService.updateUser(currentUser)
 }
 onDeleteClick(currentUser: User): void {
